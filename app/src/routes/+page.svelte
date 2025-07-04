@@ -62,39 +62,6 @@
   <a href="barbero.html" class="btn btn-warning mx-2">Barbero</a>
 </div>
 
-<!-- MODAL -->
-<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalLoginLabel">Iniciar Sesión</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="correo" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="correo" placeholder="ejemplo@barbersync.com" required>
-          </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="password" placeholder="****" required>
-          </div>
-          <div class="mb-3">
-            <label for="rol" class="form-label">Rol</label>
-            <select class="form-select" id="rol">
-              <option value="admin">Administrador</option>
-              <option value="barbero">Barbero</option>
-              <option value="cliente">Cliente</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-primary w-100">Ingresar</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- FOOTER -->
 <footer class="bg-dark text-white py-3">
   <div class="container text-center">
