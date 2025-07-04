@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #C0A080;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.formcard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.formcard {
+  background-color: var(--color-cards);
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 95%;
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+label {
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icon {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #ffffff92;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.3s, box-shadow 0.2s;
+  background-color: transparent;
+  color: white;
+}
+
+input:focus {
+  border-color: var(--color-secondaryfonts);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(192, 160, 128, 0.3); /* mismo tono que tu h1 */
+}
+
+input::placeholder {
+  color: #999;
+}
+button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+a.crear{
+  font-family: 'Roboto', sans-serif;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  border-color: #f0f8ff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+.entrar {
+  background-color: var(--color-secondaryfonts);
+  color: var(--color-principal);
+}
+
+.entrar:hover {
+  background-color: var(--color-fonts);
+}
+
+.crear {
+  background-color: transparent;
+  color: var(--color-secondaryfonts);
+  border: 2px solid var(--color-fonts);
+}
+
+.crear:hover {
+  background-color: #f0f8ff;
+}
+
+button:active {
+  transform: scale(0.97);
+}
