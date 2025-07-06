@@ -1,4 +1,5 @@
   .titulo-panel {
+  margin-top: 1rem;
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
@@ -37,13 +38,16 @@
 }
 
 .barra-avance.paso-1 {
-  width: 33%;
+  width: 25%;
 }
 
 .barra-avance.paso-2 {
-  width: 66%;
+  width: 50%;
 }
 
 .barra-avance.paso-3 {
+  width: 75%;
+}
+.barra-avance.paso-4 {
   width: 100%;
 }
