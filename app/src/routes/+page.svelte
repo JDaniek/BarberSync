@@ -1,10 +1,9 @@
 <script>
   import '$lib/Styles/Global.css';
   import '$lib/Styles/top.css';
-  import '$lib/Styles/landing.css'
+  import '$lib/Styles/landing.css';
 </script>
-
-<!-- NAVBAR -->
+<!-- NAVBAR (NO SE TOCA) -->
 <nav class="top">
   <div class="logo">
     <img src="/images/logo blanco.png" alt="Logo BarberSync" />
@@ -15,56 +14,124 @@
   </div>
 </nav>
 
-<!-- CARRUSEL -->
-<div id="carruselServicios" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://www.somosmamas.com.ar/wp-content/uploads/2017/11/cortes-de-cabello-para-mujer-corto-10.jpg" class="d-block w-100" alt="Corte 1">
+<!-- HERO MEJORADO -->
+<section class="hero-mejorado">
+  <div class="overlay"></div>
+  <div class="hero-content">
+        <div class="hero-logo">
+      <img src="/images/barber.png" alt="Logo" />
     </div>
-    <div class="carousel-item">
-      <img src="https://tse2.mm.bing.net/th/id/OIP.UP5wkc7S5yvPwGJ7rTWyUwHaFj?r=0&w=800&h=600&rs=1&pid=ImgDetMain" class="d-block w-100" alt="Afeitado">
-    </div>
-    <div class="carousel-item">
-      <img src="https://www.carloscondepeluqueros.com/wp-content/uploads/2019/01/cabecera-barbero-profesional.jpg" class="d-block w-100" alt="Estilo">
-    </div>
-  </div>
-<button class="carousel-control-prev" type="button" data-bs-target="#carruselServicios" data-bs-slide="prev" aria-label="Anterior">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#carruselServicios" data-bs-slide="next" aria-label="Siguiente">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-</button>
-</div>
-
-<!-- INFO -->
-<section class="container text-center py-5">
-  <h2 class="mb-4">¿Qué es BarberSync?</h2>
-  <p class="lead">Es una plataforma web donde las barberías pueden gestionar sus citas, sus barberos y recibir retroalimentación de sus clientes. Todo en un solo lugar, con un diseño moderno, seguro y fácil de usar.</p>
-</section>
-
-<!-- ACERCA -->
-<section class="container py-5" id="acerca">
-  <div class="row justify-content-center align-items-center g-4">
-    <div class="col-md-6">
-      <h3>Acerca de Nosotros</h3>
-      <p>En BarberSync creemos en la transformación digital de las barberías locales. Nuestro objetivo es facilitar la administración de citas, mejorar la comunicación entre barberos y clientes, y ofrecer una experiencia de usuario profesional tanto para el cliente como para el administrador. Con nuestra plataforma, los clientes pueden agendar fácilmente sus servicios desde cualquier lugar, mientras que los barberos tienen acceso a una agenda organizada y herramientas que optimizan su tiempo.</p>
-    </div>
-    <div class="col-md-5">
-      <img src="https://c8.alamy.com/compes/ptgxfd/guapo-seguros-maestros-mirando-a-la-camara-y-la-celebracion-de-unas-tijeras-en-la-mano-tres-peluqueros-profesionales-de-pie-cerca-de-peluqueria-sillas-y-posando-interior-de-barberia-ptgxfd.jpg" class="img-fluid rounded shadow" alt="Equipo BarberSync" style="max-height: 350px; object-fit: cover;">
-    </div>
+    <h1 class="hero-titulo">Constantino's Barbershop</h1>
+    <p class="hero-subtitulo">Autenticidad, precisión y estilo en cada corte</p>
+    <a href="/Login" class="btn-hero">Agenda tu cita</a>
   </div>
 </section>
 
-<!-- BOTONES ROLES -->
-<div class="d-flex justify-content-center my-4" id="botones-roles">
-  <a href="admin.html" class="btn btn-primary mx-2">Administrador</a>
-  <a href="cliente.html" class="btn btn-success mx-2">Cliente</a>
-  <a href="barbero.html" class="btn btn-warning mx-2">Barbero</a>
-</div>
-
-<!-- FOOTER -->
-<footer class="bg-dark text-white py-3">
+<!-- SERVICIOS EN CARRUSEL -->
+<section class="servicios-profesionales py-5" id="servicios">
   <div class="container text-center">
-    <p>&copy; 2025 BarberSync. Todos los derechos reservados.</p>
+    <h2 class="servicios-titulo mb-3">Nuestros Servicios</h2>
+    <p class="servicios-descripcion mb-4">
+      Calidad y detalle en cada atención. Conoce los servicios que nos distinguen.
+    </p>
+
+    <div id="carruselServicios" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center gap-4 flex-wrap">
+            <div class="card servicio-card">
+              <img src="/images/corte.png" class="card-img-top" alt="Corte Clásico" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Corte de Cabello</h5>
+                <p class="card-text">Estilo limpio y tradicional. $100 MXN</p>
+              </div>
+            </div>
+
+            <div class="card servicio-card">
+              <img src="/images/barba.png" class="card-img-top" alt="Afeitado Tradicional" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Corte de Barbal</h5>
+                <p class="card-text">Navaja caliente, espuma especial. $120 MXN</p>
+              </div>
+            </div>
+
+            <div class="card servicio-card">
+              <img src="/images/cabar.png" class="card-img-top" alt="Diseño de Barba" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Arreglo de Cabello y Barba</h5>
+                <p class="card-text">Corte impecable con perfilado con simetría y estilo. $180 MXN</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center gap-4 flex-wrap">
+            <div class="card servicio-card">
+              <img src="/images/navaja.png" class="card-img-top" alt="Fade Americano" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Afeitado de Barba</h5>
+                <p class="card-text">Degradado moderno. $100 MXN</p>
+              </div>
+            </div>
+
+            <div class="card servicio-card">
+              <img src="/images/grecas.png" class="card-img-top" alt="Limpieza Facial" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Grecas/Dibujos</h5>
+                <p class="card-text">Simetria y modernedidad. $120 MXN</p>
+              </div>
+            </div>
+
+            <div class="card servicio-card">
+              <img src="/images/cejas.png" class="card-img-top" alt="Corte para Niño" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Arreglo de Cejas</h5>
+                <p class="card-text">Paciencia y estilo. $50 MXN</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carruselServicios" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carruselServicios" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- UBICACIÓN -->
+<section class="ubicacion" id="ubicacion">
+  <div class="ubicacion-content">
+    <div class="mapa">
+<iframe src="https://www.google.com/maps/embed?pb=!4v1751675662230!6m8!1m7!1slD_fPZ1FyLr7NHzzBPBPRg!2m2!1d16.7376832914536!2d-93.11903463741271!3f97.633896!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+    </div>
+    <div class="info">
+      <h3><i class="fas fa-map-marker-alt"></i> ¿Dónde estamos?</h3>
+      <p><strong><i class="fas fa-location-dot"></i> Dirección:</strong> Calle Central-Sur entre 21a y 20a sur, San Francisco,
+      Tuxtla Gutiérrez, México Chiapas.</p>
+      <p><strong><i class="fas fa-clock"></i> Horario:</strong> Lunes a Sábado, 9:00 am – 8:00 pm</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER OSCURO -->
+<footer class="footer">
+  <div class="footer-left">
+    <p><strong>Barbería El Clásico</strong></p>
+    <p>Tu corte, tu estilo, tu momento.</p>
+    <p>© 2025 Todos los derechos reservados</p>
+  </div>
+  <div class="footer-right">
+    <p class="powered">Con tecnología de</p>
+    <img src="/images/logo blanco.png" alt="BarberSync" />
+    <p><a href="https://barbersync" target="_blank">www.barbersync.mx</a></p>
   </div>
 </footer>
