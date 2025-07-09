@@ -68,7 +68,7 @@
     <p>Explora y agenda cortes, barba y más.</p>
   </a>
 
-  <a href="/ver-citas" class="card-opcion">
+  <a href="/Cliente/Historial" class="card-opcion">
     <img src="/icons/calendarone.svg" alt="Horarios" />
     <h3>Ver Citas</h3>
     <p>Consulta disponibilidad y reserva tu cita.</p>
@@ -80,3 +80,4 @@
     <p>Contáctanos o ubícanos fácilmente.</p>
   </a>
 </section>
+ 

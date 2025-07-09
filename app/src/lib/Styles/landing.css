@@ -3,9 +3,9 @@
 }
 
 .hero-logo img {
-  width: 250px;  /* Ajusta el tamaño como prefieras */
+  width: 200px; 
   height: auto;
-  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6)); /* Opcional: sombra para resaltar sobre fondo oscuro */
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6)); 
 }
 
 .hero-mejorado {
@@ -63,7 +63,7 @@
 
 /* ==== SERVICIOS ==== */
 .servicios-profesionales {
-  background-color: #000000; /* Fondo blanco */
+  background-color: #000000;
   padding: 4rem 2rem;
 }
 
@@ -178,7 +178,7 @@
 .footer-right img {
   width: 90px;
   margin: 10px 0;
-  filter: brightness(0) invert(1); /* blanco si es logo oscuro */
+  filter: brightness(0) invert(1); 
 }
 
 .footer a {

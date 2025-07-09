@@ -24,7 +24,7 @@
     alert('✅ Cita confirmada exitosamente.\n(En producción se enviaría al servidor)');
     localStorage.removeItem('citaParcial');
     localStorage.removeItem('barberoSeleccionado');
-    window.location.href = '/';
+    window.location.href = '/Cliente/1-panel';
   }
 </script>
 

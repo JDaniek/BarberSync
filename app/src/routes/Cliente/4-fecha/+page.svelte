@@ -9,7 +9,6 @@
   import Flatpickr from 'svelte-flatpickr';
   import 'flatpickr/dist/themes/dark.css';
   import { Spanish } from 'flatpickr/dist/l10n/es.js';
-
   import { onMount } from 'svelte';
 
   let fechaSeleccionada = '';
@@ -36,9 +35,7 @@
         cita = JSON.parse(almacenado);
       }
 
-      // Formatea la fecha antes de guardar
       const fechaFormateada = formatearFecha(new Date(fechaSeleccionada));
-
       cita.fecha = fechaFormateada;
       cita.hora = horaSeleccionada;
 
@@ -75,12 +72,12 @@
 <!-- FORMULARIO -->
 <main class="contenedor">
   <div class="bloque">
-    <label>Fecha</label>
+    <p class="etiqueta">Fecha</p>
     <Flatpickr
       bind:value={fechaSeleccionada}
       options={{
         minDate: 'today',
-        dateFormat: 'd-m-Y', // visual
+        dateFormat: 'd-m-Y',
         locale: Spanish
       }}
       class="input"
@@ -88,7 +85,7 @@
   </div>
 
   <div class="bloque">
-    <label>Hora</label>
+    <p class="etiqueta">Hora</p>
     <div class="horas">
       {#each horarios as hora}
         <button
@@ -123,7 +120,7 @@
     gap: 0.5rem;
   }
 
-  label {
+  .etiqueta {
     font-weight: bold;
     color: #ccc;
   }

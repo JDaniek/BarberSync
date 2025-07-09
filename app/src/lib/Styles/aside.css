@@ -1,35 +1,29 @@
-
-  /* Oculta el checkbox */
   .menu-toggle {
     display: none;
   }
 
-  /* Estilo base para el menú lateral */
   .menu {
     position: fixed;
     top: 0;
-    left: -250px; /* Oculto inicialmente fuera de pantalla */
-    width: 250px;
+    left: -330px;
+    width: 280px;
     height: 100vh;
     background-color: var(--color-cards);
-    padding-top: 60px; /* para no tapar el nav */
+    padding-top: 60px;
     transition: left 0.3s ease;
     z-index: 1000;
   }
 
-  /* Cuando el checkbox está checked, desplaza el menú visible */
   .menu-toggle:checked ~ .menu {
     left: 0;
   }
 
-  /* Opcional: cambiar el icono de menú cuando está abierto */
   .menu-icon {
     cursor: pointer;
     display: inline-block;
     padding: 10px;
   }
 
-  /* Ajusta el nav para que tenga posición fija y se vea encima */
   nav.top {
     position: fixed;
     width: 100%;
@@ -41,18 +35,20 @@
     padding: 0 15px;
     z-index: 1100;
   }
-.fotoadmin img {
-  width: 120px;   /* o el tamaño que desees */
-  height: auto;
-  display: block;
-  margin: 0 auto; /* Esto asegura que esté centrado incluso si text-align falla */
-}
-.nombre-usuario{
-  color: white;
-  text-align: center;
-  font-size: 30px;
-}
-  /* Estilos para los enlaces del menú */
+
+  .fotoadmin img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .nombre-usuario {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+
   .menu ul {
     list-style: none;
     padding: 0;
@@ -74,4 +70,38 @@
   .menu ul li a:hover {
     border-radius: 20px;
     background-color: #444;
+  }
+
+  @media screen and (max-width: 768px) {
+    nav.top {
+      height: 50px;
+      padding: 0 10px;
+    }
+
+    .menu {
+      width: 100vw;
+      padding-top: 50px;
+    }
+
+    .menu ul li a {
+      font-size: 16px;
+      padding: 10px;
+    }
+
+    .menu ul li {
+      margin: 10px 0;
+    }
+
+    .fotoadmin img {
+      width: 80px;
+    }
+
+    .nombre-usuario {
+      font-size: 20px;
+    }
+
+    .menu-icon img,
+    .salir img {
+      width: 28px;
+    }
   }

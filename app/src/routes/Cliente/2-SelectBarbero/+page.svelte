@@ -22,24 +22,20 @@
     if (barberoSeleccionado) {
       const barberoElegido = barberos.find(b => b.id === barberoSeleccionado);
 
-      // Leer datos previos
       let cita = {};
       const almacenado = localStorage.getItem('citaParcial');
       if (almacenado) {
         cita = JSON.parse(almacenado);
       }
 
-      // Agregar barbero al objeto cita
       cita.barbero = {
         id: barberoElegido.id,
         nombre: barberoElegido.nombre,
         especialidad: barberoElegido.especialidad
       };
 
-      // Guardar de nuevo
       localStorage.setItem('citaParcial', JSON.stringify(cita));
 
-      // Ir a siguiente paso
       window.location.href = '/Cliente/3-selectservice';
     }
   }
@@ -73,7 +69,8 @@
   <div class="grid-barberos">
     {#each barberos as barbero}
       <div
-        class="card-barbero {barberoSeleccionado === barbero.id ? 'seleccionado' : ''}"
+        class="card-barbero"
+        class:seleccionado={barberoSeleccionado === barbero.id}
         on:click={() => barberoSeleccionado = barbero.id}
       >
         <img
